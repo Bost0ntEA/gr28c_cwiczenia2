@@ -8,14 +8,15 @@ Console.WriteLine("Hello, World!");
 
 static double getAvarage(int[] lista)
 {
-    double wynikliczby=0;
+    double result1 = 0;
     for (int i = 0; i < lista.Length; i++)
     {
-        wynikliczby += lista[i];
+        result1 += lista[i];
     }
 
-    return  wynikliczby / lista.Length;
+    return result1 / lista.Length;
 }
+
 int[] paluszki = { 1, 5, 7, 8, 1234, 6, 2, 5, 2, 1, 4 };
 double cosik = getAvarage(paluszki);
 Console.WriteLine(cosik);
